@@ -124,13 +124,13 @@ int main()
 
     // music
     SoundBuffer buffer;
-    if (!buffer.loadFromFile("music.wav")) {
+    if (!buffer.loadFromFile("assets/music.wav")) {
         cout << "error" << endl;
     }
     Sound sound(buffer);
 
     SoundBuffer bufferbg;
-    if (!bufferbg.loadFromFile("musicbg.wav")) {
+    if (!bufferbg.loadFromFile("assets/musicbg.wav")) {
         cout << "error" << endl;
     }
     Sound soundbg(bufferbg);
@@ -138,36 +138,36 @@ int main()
 
     //Textures And Sprites:
     Texture texture;
-    texture.loadFromFile("Game_2.png");
+    texture.loadFromFile("assets/Game_2.png");
     Sprite bg(texture);
 
     Texture tpl;
-    tpl.loadFromFile("player_run_left.png");
+    tpl.loadFromFile("assets/player_run_left.png");
     Sprite player(tpl);
     player.setTextureRect(IntRect({ 0, 0 }, { 45, 54 }));
 
     Texture tbl1;
-    tbl1.loadFromFile("lb1.png");
+    tbl1.loadFromFile("assets/lb1.png");
     Sprite bl1(tbl1);
 
     Texture tbl2;
-    tbl2.loadFromFile("lb2.png");
+    tbl2.loadFromFile("assets/lb2.png");
     Sprite bl2(tbl2);
 
     Texture tbl3;
-    tbl3.loadFromFile("lb3.png");
+    tbl3.loadFromFile("assets/lb3.png");
     Sprite bl3(tbl3);
 
     Texture tbl4;
-    tbl4.loadFromFile("lb4.png");
+    tbl4.loadFromFile("assets/lb4.png");
     Sprite bl4(tbl4);
 
     Texture tbl5;
-    tbl5.loadFromFile("lb5.png");
+    tbl5.loadFromFile("assets/lb5.png");
     Sprite bl5(tbl5);
 
     Texture tbl0;
-    tbl0.loadFromFile("lb0.png");
+    tbl0.loadFromFile("assets/lb0.png");
     Sprite bl0(tbl0);
 
     vector<Sprite> bls = { bl0,bl1,bl2,bl3,bl4,bl5 };
@@ -176,26 +176,26 @@ int main()
     }
 
     Texture ttabl;
-    ttabl.loadFromFile("khdra.png");
+    ttabl.loadFromFile("assets/khdra.png");
     Sprite tabl(ttabl);
     tabl.setPosition(Vector2f(540.f, 7.f));
 
     Texture ttabl2;
-    ttabl2.loadFromFile("mauve.png");
+    ttabl2.loadFromFile("assets/mauve.png");
     Sprite tabl2(ttabl2);
     tabl2.setPosition(Vector2f(540.f, 45.f));
 
     Texture tblm;
-    tblm.loadFromFile("lbm.png");
+    tblm.loadFromFile("assets/lbm.png");
     Sprite blm(tblm);
     blm.setPosition(Vector2f(638.f, 50.f));
 
     Texture diamt;
-    diamt.loadFromFile("diamond.png");
+    diamt.loadFromFile("assets/diamond.png");
     Sprite diaman(diamt);
 
     Texture dit;
-    dit.loadFromFile("diam.png");
+    dit.loadFromFile("assets/diam.png");
     Sprite diam(dit);
 
     vector<Sprite> diam_vect = { diam,diam,diam,diam,diam };
@@ -214,7 +214,7 @@ int main()
     vector<int> pos_diam = { 650,678,709,736,765 };
 
     Texture potiont;
-    potiont.loadFromFile("potionv.png");
+    potiont.loadFromFile("assets/potionv.png");
     Sprite potion(potiont);
 
     vector<Sprite> pot_vect = { potion,potion,potion,potion };
@@ -226,7 +226,7 @@ int main()
     }
 
     Texture enemt;
-    enemt.loadFromFile("enemi.png");
+    enemt.loadFromFile("assets/enemi.png");
     Sprite enemi(enemt);
     enemi.setPosition(Vector2f(600.f, 410.f));
 
@@ -239,55 +239,55 @@ int main()
     }
 
     Texture tplay_bg;
-    tplay_bg.loadFromFile("play_bg.png");
+    tplay_bg.loadFromFile("assets/play_bg.png");
     Sprite play_bg(tplay_bg);
 
     Texture tplay1;
-    tplay1.loadFromFile("play1.png");
+    tplay1.loadFromFile("assets/play1.png");
     Sprite play1(tplay1);
     play1.setPosition(Vector2f(300.f, 290.f));
 
     Texture tplay2;
-    tplay2.loadFromFile("play2.png");
+    tplay2.loadFromFile("assets/play2.png");
     Sprite play2(tplay2);
     play2.setPosition(Vector2f(300.f, 290.f));
 
     Texture tlogo;
-    tlogo.loadFromFile("logo1.png");
+    tlogo.loadFromFile("assets/logo1.png");
     Sprite logo(tlogo);
     logo.setPosition(Vector2f(150.f, 40.f));
 
     Texture tbggow;
-    tbggow.loadFromFile("bggow.png");
+    tbggow.loadFromFile("assets/bggow.png");
     Sprite bggow(tbggow);
 
     Texture tgo;
-    tgo.loadFromFile("gameoverfinal.png");
+    tgo.loadFromFile("assets/gameoverfinal.png");
     Sprite go(tgo);
     go.setPosition(Vector2f(100.f, 140.f));
 
     Texture tcong;
-    tcong.loadFromFile("congrat.png");
+    tcong.loadFromFile("assets/congrat.png");
     Sprite cong(tcong);
     cong.setPosition(Vector2f(150.f, 150.f));
 
     Texture treplay1;
-    treplay1.loadFromFile("replay1.png");
+    treplay1.loadFromFile("assets/replay1.png");
     Sprite replay1(treplay1);
     replay1.setPosition(Vector2f(50.f, 341.f));
 
     Texture treplay2;
-    treplay2.loadFromFile("replay2.png");
+    treplay2.loadFromFile("assets/replay2.png");
     Sprite replay2(treplay2);
     replay2.setPosition(Vector2f(50.f, 341.f));
 
     Texture texit1;
-    texit1.loadFromFile("exit1.png");
+    texit1.loadFromFile("assets/exit1.png");
     Sprite exit1(texit1);
     exit1.setPosition(Vector2f(550.f, 341.f));
 
     Texture texit2;
-    texit2.loadFromFile("exit2.png");
+    texit2.loadFromFile("assets/exit2.png");
     Sprite exit2(texit2);
     exit2.setPosition(Vector2f(550.f, 341.f));
 
